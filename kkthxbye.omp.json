@@ -32,7 +32,7 @@
             "fetch_status": false
           },
           "style": "plain",
-          "template": "<#AD7FA8>(</>{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }}<#AD7FA8>)</> ",
+          "template": "<#AD7FA8>(</>{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}<#AD7FA8>)</> ",
           "type": "git"
         },
         {
