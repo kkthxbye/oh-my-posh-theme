@@ -3,48 +3,48 @@
   "console_title_template": "{{ .Folder }}",
   "blocks": [
     {
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#100e23",
           "style": "plain",
           "template": " \uf0e7 ",
+          "foreground": "#100e23",
           "type": "root"
         },
         {
-          "foreground": "lightGreen",
           "style": "plain",
           "template": "{{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}@{{ .HostName }} ",
+          "foreground": "lightGreen",
           "type": "session"
         },
         {
-          "foreground": "lightBlue",
           "properties": {
             "style": "full"
           },
           "style": "plain",
           "template": "{{ .Path }} ",
+          "foreground": "lightBlue",
           "type": "path"
         },
         {
-          "foreground": "lightGreen",
           "properties": {
             "branch_icon": "",
             "fetch_status": false
           },
           "style": "plain",
           "template": "<#AD7FA8>(</>{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}<#AD7FA8>)</> ",
+          "foreground": "lightGreen",
           "type": "git"
         },
         {
-          "foreground": "lightBlue",
           "style": "plain",
           "template": "$ ",
+          "foreground": "lightBlue",
           "type": "text"
         }
-      ],
-      "type": "prompt"
+      ]
     }
   ],
-  "version": 2
+  "version": 3
 }
