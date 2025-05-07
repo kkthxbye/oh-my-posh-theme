@@ -19,6 +19,12 @@
           "type": "session"
         },
         {
+          "type": "python",
+          "style": "plain",
+          "foreground": "#6dff9e",
+          "template": "({{ if .Venv }}{{ .Venv }}{{ end }}) "
+        },
+        {
           "properties": {
             "style": "full"
           },
